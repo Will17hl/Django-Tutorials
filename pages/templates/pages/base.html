@@ -5,14 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     >
 
-    <!-- Custom CSS -->
     <link href="{% static 'pages/app.css' %}" rel="stylesheet">
 
     <title>{% block title %}Online Store{% endblock %}</title>
@@ -20,7 +19,7 @@
 
 <body>
 
-<!-- Navbar -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-4">
   <div class="container">
     <a class="navbar-brand" href="{% url 'home' %}">Online Store</a>
@@ -45,7 +44,7 @@
   </div>
 </nav>
 
-<!-- Header -->
+
 <header class="masthead bg-primary text-white text-center py-4">
   <div class="container d-flex align-items-center flex-column">
     <h2 class="masthead-title">
@@ -54,13 +53,13 @@
   </div>
 </header>
 
-<!-- Main content -->
+
 <div class="container my-4">
   {% block content %}
   {% endblock %}
 </div>
 
-<!-- Footer -->
+
 {% block footer %}
 <div class="copyright py-4 text-center text-white bg-dark">
   <div class="container">
@@ -75,7 +74,7 @@
 </div>
 {% endblock %}
 
-<!-- Bootstrap JS -->
+
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
   crossorigin="anonymous">
